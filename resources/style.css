@@ -36,15 +36,20 @@ nav ul li:hover {
     cursor: pointer;
 }
 
+li.store-link {
+    position: relative;
+}
+
 .dropdown-store {
     display: none;
     background-color: rgba(22, 22, 23, 0.8);
-    position: fixed;
+    position: absolute;
     /* margin-top: 1.5rem; */
     top: 3rem;
-    left: 0;
+    /* right: 0; */
     height: fit-content;
     width: 100vw;
+    padding: 0 15%;
 }
 
 .dropdown-store p {
@@ -62,6 +67,7 @@ nav ul li:hover {
     padding-left: 1rem;
 }
 
-.visible {
+body > header > nav > ul > li:hover .dropdown-store {
     display: block;
+    width: 100vw;
 }
